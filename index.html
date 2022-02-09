@@ -6,22 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" /> -->
     <title>html-css-hw-01</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- шапка сайта -->
     <header>
       <nav>
-        <a href="./index.html" lang="en" id="top-anchor">WebStudio</a>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+        <!-- логотип -->
+        <a class="logo" href="./index.html" lang="en" id="top-anchor"
+          >Web<span class="logo-black">Studio</span></a
+        >
+
+        <!-- навигация сайта -->
+        <ul class="nav list">
+          <li><a class="link" href="">Студия</a></li>
+          <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="link" href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <!-- контакты -->
+      <ul class="contacts list">
+        <li>
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
 
@@ -143,7 +157,10 @@
 
     <!-- подвал страницы -->
     <footer>
-      <a href="#top-anchor" lang="en">WebStudio</a>
+      <!-- логотип -->
+      <a class="logo" href="#top-anchor" lang="en"
+        >Web<span class="logo-white">Studio</span></a
+      >
       <address>
         г. Киев, пр-т Леси Украинки, 26<br />
         info@example.com<br />
