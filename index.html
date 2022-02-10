@@ -42,39 +42,39 @@
     <!-- основной контент -->
     <main>
       <!-- герой -->
-      <section>
-        <h1>Эффективные решения<br />для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+      <section class="hero">
+        <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
+        <button class="order-service" type="button">Заказать услугу</button>
         <!-- <a href="">Заказать услугу</a> -->
       </section>
       <!-- наши преимущества -->
       <section>
         <!-- Скрытый заголовок ↓ -->
         <h2>Наши преимущества</h2>
-        <ul>
+        <ul class="list">
           <li>
-            <h3>Внимание к деталям</h3>
+            <h3 class="sec-subtitle">Внимание к деталям</h3>
             <p>
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
-            <h3>Пунктуальность</h3>
+            <h3 class="sec-subtitle">Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
-            <h3>Планирование</h3>
+            <h3 class="sec-subtitle">Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
-            <h3>Современные технологии</h3>
+            <h3 class="sec-subtitle">Современные технологии</h3>
             <p>
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
@@ -84,8 +84,8 @@
       </section>
       <!-- Чем мы занимаемся -->
       <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
+        <h2 class="section-title">Чем мы занимаемся</h2>
+        <ul class="list">
           <li>
             <a href=""
               ><img src="images/keyboard.jpg" alt="клавиатура" width="370"
@@ -105,50 +105,50 @@
       </section>
       <!-- Наша команда -->
       <section>
-        <h2>Наша команда</h2>
-        <ul>
+        <h2 class="section-title">Наша команда</h2>
+        <ul class="list">
           <li>
-            <div>
+            <div class="card">
               <img
                 src="./images/product-designer.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
               />
-              <h3>Игорь Демьяненко</h3>
-              <p lang="en">Product Designer</p>
+              <h3 class="card-title">Игорь Демьяненко</h3>
+              <p class="card-role" lang="en">Product Designer</p>
             </div>
           </li>
           <li>
-            <div>
+            <div class="card">
               <img
                 src="./images/frontend-eveloper.jpg"
                 alt="Ольга Репина"
                 width="270"
               />
-              <h3>Ольга Репина</h3>
-              <p lang="en">Frontend Developer</p>
+              <h3 class="card-title">Ольга Репина</h3>
+              <p class="card-role" lang="en">Frontend Developer</p>
             </div>
           </li>
           <li>
-            <div>
+            <div class="card">
               <img
                 src="./images/marketing.jpg"
                 alt="Николай Тарасов"
                 width="270"
               />
-              <h3>Николай Тарасов</h3>
-              <p lang="en">Marketing</p>
+              <h3 class="card-title">Николай Тарасов</h3>
+              <p class="card-role" lang="en">Marketing</p>
             </div>
           </li>
           <li>
-            <div>
+            <div class="card">
               <img
                 src="./images/ui-designer.jpg"
                 alt="Михаил Ермаков"
                 width="270"
               />
-              <h3>Михаил Ермаков</h3>
-              <p lang="en">UI Designer</p>
+              <h3 class="card-title">Михаил Ермаков</h3>
+              <p class="card-role" lang="en">UI Designer</p>
             </div>
           </li>
         </ul>
@@ -161,10 +161,13 @@
       <a class="logo" href="#top-anchor" lang="en"
         >Web<span class="logo-white">Studio</span></a
       >
-      <address>
-        г. Киев, пр-т Леси Украинки, 26<br />
-        info@example.com<br />
-        +38 099 111 11 11
+      <!-- контактная информация -->
+      <address class="address">
+        <span class="loc-point">г. Киев, пр-т Леси Украинки, 26</span><br />
+        <span class="mail-tel"
+          >info@example.com<br />
+          +38 099 111 11 11</span
+        >
       </address>
     </footer>
   </body>

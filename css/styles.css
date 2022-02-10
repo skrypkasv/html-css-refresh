@@ -19,6 +19,7 @@
   --accent-color: #2196f3;
 }
 
+/* глобальные стили */
 body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -78,30 +79,83 @@ body {
   color: var(--accent-color);
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
+/* герой */
+.hero {
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.hero-title {
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.order-service {
+  color: var(--white-text-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+}
+
+/* Заголовки секций */
+.section-title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* наши преимущества */
+.sec-subtitle {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* наша команда */
+.card {
+  line-height: 1.19;
+  text-align: center;
+}
+
+.card-title {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-role {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* подвал страницы */
 footer {
   background-color: #2f303a;
+}
+
+/* контактная информация */
+.address {
+  font-style: inherit;
+}
+
+.loc-point {
+  color: var(--white-text-color);
+}
+
+.mail-tel {
+  color: rgba(255, 255, 255, 0.6);
 }
