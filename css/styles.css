@@ -159,3 +159,36 @@ footer {
 .mail-tel {
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* страница portfolio */
+
+/* радио кнопки */
+.filter {
+  color: var(--secondary-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter:hover,
+.filter:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+/* карточки проектов */
+.proj-title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.proj-category {
+  font-size: 16px;
+  line-height: 1.87;
+}
