@@ -6,8 +6,8 @@
 /* вторичный цвет фона #2F303A */
 /* цвет-акцент #2196F3 */
 
-/* font-family: 'Raleway', sans-serif; */
 /* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
 
 :root {
   --primary-text-color: #757575;
@@ -96,7 +96,6 @@ body {
 
 .order-service {
   color: var(--white-text-color);
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
