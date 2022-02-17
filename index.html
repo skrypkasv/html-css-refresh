@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- шапка сайта -->
-    <header>
+    <header class="header">
       <div class="container">
         <div class="flex-header">
           <nav class="flex-nav">
@@ -66,7 +66,7 @@
         </div>
       </section>
       <!-- наши преимущества -->
-      <section class="features">
+      <section class="section">
         <div class="container">
           <!-- Скрытый заголовок ↓ -->
           <h2 class="invisible">Наши преимущества</h2>
@@ -103,7 +103,7 @@
         </div>
       </section>
       <!-- Чем мы занимаемся -->
-      <section class="deals">
+      <section class="section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="deal list">
@@ -126,11 +126,11 @@
         </div>
       </section>
       <!-- Наша команда -->
-      <section class="team">
+      <section class="section sec-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list">
-            <li>
+          <ul class="team list">
+            <li class="team-item">
               <div class="card">
                 <img
                   src="./images/product-designer.jpg"
@@ -141,7 +141,7 @@
                 <p class="card-role" lang="en">Product Designer</p>
               </div>
             </li>
-            <li>
+            <li class="team-item">
               <div class="card">
                 <img
                   src="./images/frontend-eveloper.jpg"
@@ -152,7 +152,7 @@
                 <p class="card-role" lang="en">Frontend Developer</p>
               </div>
             </li>
-            <li>
+            <li class="team-item">
               <div class="card">
                 <img
                   src="./images/marketing.jpg"
@@ -163,7 +163,7 @@
                 <p class="card-role" lang="en">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="team-item">
               <div class="card">
                 <img
                   src="./images/ui-designer.jpg"
@@ -188,11 +188,9 @@
         >
         <!-- контактная информация -->
         <address class="address">
-          <span class="loc-point">г. Киев, пр-т Леси Украинки, 26</span><br />
-          <span class="mail-tel"
-            >info@example.com<br />
-            +38 099 111 11 11</span
-          >
+          <span class="loc-point">г. Киев, пр-т Леси Украинки, 26</span>
+          <span class="mail">info@example.com</span>
+          <span class="tel">+38 099 111 11 11</span>
         </address>
       </div>
     </footer>
