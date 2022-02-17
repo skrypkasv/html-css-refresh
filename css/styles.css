@@ -6,7 +6,8 @@
 /* вторичный цвет фона #2F303A */
 /* третий цвет фона #f5f4fa */
 /* цвет-акцент #2196F3 */
-/* цвет-рамки хедера #ececec; */
+/* цвет рамки хедера #ececec; */
+/* цвет рамки карточки в портфолио #eeeeee */
 
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */
@@ -21,6 +22,7 @@
   --third-bg-color: #f5f4fa;
   --accent-color: #2196f3;
   --header-bdr-color: #ececec;
+  --card-bdr-color: #eeeeee;
 }
 
 /* глобальные стили */
@@ -48,16 +50,57 @@ body {
   padding: 0 15px;
   outline: 1px solid red;
 }
+/* Заголовки секций */
+.section-title {
+  margin-bottom: 50px;
 
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.sec-subtitle {
+  margin-bottom: 10px;
+
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
 h1,
 h2,
 h3,
-h4,
-h5,
 p {
   margin: 0;
 }
-
+/* скрытый заголовок */
+.invisible {
+  margin: 0px;
+  height: 0px;
+  color: transparent;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 /* шапка сайта */
 .header .container {
   padding-top: 24px;
@@ -72,7 +115,6 @@ p {
   display: flex;
   align-items: center;
 }
-
 /* логотип */
 .logo {
   display: block;
@@ -91,7 +133,6 @@ p {
 .logo-white {
   color: var(--white-text-color);
 }
-
 /* навигация сайта */
 .nav {
   display: flex;
@@ -109,7 +150,6 @@ p {
 .nav .link:focus {
   color: var(--accent-color);
 }
-
 /* контакты */
 .contact {
   display: flex;
@@ -128,6 +168,14 @@ p {
 .contact .link:focus {
   color: var(--accent-color);
 }
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 /*  */
 /*  */
 /*  */
@@ -190,33 +238,6 @@ p {
 }
 .order-service:active {
   box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-/* Заголовки секций */
-.section-title {
-  margin-bottom: 50px;
-
-  color: var(--secondary-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.sec-subtitle {
-  margin-bottom: 10px;
-
-  color: var(--secondary-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-/* скрытый заголовок */
-.invisible {
-  margin: 0px;
-  height: 0px;
-  color: transparent;
 }
 
 /* наши преимущества */
@@ -352,53 +373,79 @@ p {
 /*  */
 /*  */
 /*  */
-/*  */
 /* страница portfolio */
 /* радио кнопки */
-.panel {
+.filter-panel {
   display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
 }
-.filter {
+.filter-panel li:not(:last-child) {
+  margin-right: 8px;
+}
+.filter-btn {
+  --h: 38px;
+  min-width: 73px;
+  height: var(--h);
+  padding: 0px 22px;
+
   color: var(--secondary-text-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: var(--h);
+  letter-spacing: inherit;
   text-align: center;
+
+  border: none;
+  outline: none;
   cursor: pointer;
+  border-radius: 4px;
+  background-color: var(--third-bg-color);
 }
-.filter:hover,
-.filter:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   color: var(--white-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 /* карточки проектов */
-.projects {
+.project {
   display: flex;
   flex-wrap: wrap;
 }
 .proj-item {
   margin-bottom: 30px;
+  padding-bottom: 20px;
   flex-basis: calc((100% - 60px) / 3);
-  outline: 1px solid navy;
+  border-bottom: 1px solid var(--card-bdr-color);
+  /* outline: 1px solid navy; */
 }
-
+.proj-item img {
+  display: block;
+  margin-bottom: 20px;
+  /* outline: 1px solid navy; */
+}
 .proj-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 .proj-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-
+.proj-descript {
+  padding-left: 24px;
+  padding-right: 24px;
+}
 .proj-title {
+  margin-bottom: 4px;
+
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-
 .proj-category {
   font-size: 16px;
   line-height: 1.87;

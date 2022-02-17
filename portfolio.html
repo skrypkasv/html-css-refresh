@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
+    <!-- шапка сайта -->
+    <header class="header">
       <div class="container">
         <div class="flex-header">
           <nav class="flex-nav">
@@ -56,107 +57,129 @@
 
     <!-- основной контент -->
     <main>
-      <div class="container">
-        <!-- Скрытый заголовок ↓ -->
-        <h1>Наши проекты</h1>
-        <!-- радио-кнопки -->
-        <ul class="panel list">
-          <li><button class="filter" type="button">Все</button></li>
-          <li><button class="filter" type="button">Веб-сайты</button></li>
-          <li><button class="filter" type="button">Приложения</button></li>
-          <li><button class="filter" type="button">Дизайн</button></li>
-          <li><button class="filter" type="button">Маркетинг</button></li>
-        </ul>
-        <!-- карточки проектов -->
-        <ul class="projects list">
-          <li class="proj-item">
-            <a class="link" href=""
-              ><img
-                src="./images/technocryack.jpg"
-                alt="экран ноутбука"
-                width="370"
-              />
-              <h2 class="proj-title">Технокряк</h2>
-              <p class="proj-category">Веб-сайт</p></a
-            >
-          </li>
-          <li class="proj-item">
-            <a class="link" href=""
-              ><img
-                src="./images/bascket-players.jpg"
-                alt="два баскетболиста"
-                width="370"
-              />
-              <h2 class="proj-title">Постер New Orlean vs Golden Star</h2>
-              <p class="proj-category">Дизайн</p></a
-            >
-          </li>
-          <li class="proj-item">
-            <a class="link" href=""
-              ><img
-                src="./images/seafood.jpg"
-                alt="ресторанный постер"
-                width="370"
-              />
-              <h2 class="proj-title">Ресторан Seafood</h2>
-              <p class="proj-category">Приложение</p></a
-            >
-          </li>
-          <li class="proj-item">
-            <a class="link" href=""
-              ><img src="./images/earphones.jpg" alt="наушники" width="370" />
-              <h2 class="proj-title">Проект Prime</h2>
-              <p class="proj-category">Маркетинг</p></a
-            >
-          </li>
-          <li class="proj-item">
-            <a class="link" href=""
-              ><img src="./images/boxes.jpg" alt="коробки" width="370" />
-              <h2 class="proj-title">Проект Boxes</h2>
-              <p class="proj-category">Приложение</p></a
-            >
-          </li>
-          <li class="proj-item">
-            <a class="link" href=""
-              ><img src="./images/monitor.jpg" alt="монитор" width="370" />
-              <h2 class="proj-title">Inspiration has no Borders</h2>
-              <p class="proj-category">Веб-сайт</p></a
-            >
-          </li>
-          <li class="proj-item">
-            <a class="link" href=""
-              ><img
-                src="./images/magazine.jpg"
-                alt="открытый журнал"
-                width="370"
-              />
-              <h2 class="proj-title">Издание Limited Edition</h2>
-              <p class="proj-category">Дизайн</p></a
-            >
-          </li>
-          <li class="proj-item">
-            <a class="link" href=""
-              ><img
-                src="./images/label-tag.jpg"
-                alt="бирка с одежды"
-                width="370"
-              />
-              <h2 class="proj-title">Проект LAB</h2>
-              <p class="proj-category">Маркетинг</p></a
-            >
-          </li>
-          <li class="proj-item">
-            <a class="link" href=""
-              ><img
-                src="./images/hands-on-laptop.jpg"
-                alt="руки на ноутбуке"
-                width="370"
-              />
-              <h2 class="proj-title">Growing Business</h2>
-              <p class="proj-category">Приложение</p></a
-            >
-          </li>
-        </ul>
+      <div class="section">
+        <div class="container">
+          <!-- Скрытый заголовок ↓ -->
+          <h1 class="invisible">Наши проекты</h1>
+          <!-- радио-кнопки -->
+          <ul class="filter-panel list">
+            <li><button class="filter-btn" type="button">Все</button></li>
+            <li><button class="filter-btn" type="button">Веб-сайты</button></li>
+            <li>
+              <button class="filter-btn" type="button">Приложения</button>
+            </li>
+            <li><button class="filter-btn" type="button">Дизайн</button></li>
+            <li><button class="filter-btn" type="button">Маркетинг</button></li>
+          </ul>
+          <!-- карточки проектов -->
+          <ul class="project list">
+            <li class="proj-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/technocryack.jpg"
+                  alt="экран ноутбука"
+                  width="370"
+                />
+                <div class="proj-descript">
+                  <h2 class="proj-title">Технокряк</h2>
+                  <p class="proj-category">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="proj-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/bascket-players.jpg"
+                  alt="два баскетболиста"
+                  width="370"
+                />
+                <div class="proj-descript">
+                  <h2 class="proj-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="proj-category">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="proj-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/seafood.jpg"
+                  alt="ресторанный постер"
+                  width="370"
+                />
+                <div class="proj-descript">
+                  <h2 class="proj-title">Ресторан Seafood</h2>
+                  <p class="proj-category">Приложение</p>
+                </div></a
+              >
+            </li>
+            <li class="proj-item">
+              <a class="link" href=""
+                ><img src="./images/earphones.jpg" alt="наушники" width="370" />
+                <div class="proj-descript">
+                  <h2 class="proj-title">Проект Prime</h2>
+                  <p class="proj-category">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="proj-item">
+              <a class="link" href=""
+                ><img src="./images/boxes.jpg" alt="коробки" width="370" />
+                <div class="proj-descript">
+                  <h2 class="proj-title">Проект Boxes</h2>
+                  <p class="proj-category">Приложение</p>
+                </div></a
+              >
+            </li>
+            <li class="proj-item">
+              <a class="link" href=""
+                ><img src="./images/monitor.jpg" alt="монитор" width="370" />
+                <div class="proj-descript">
+                  <h2 class="proj-title">Inspiration has no Borders</h2>
+                  <p class="proj-category">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="proj-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/magazine.jpg"
+                  alt="открытый журнал"
+                  width="370"
+                />
+                <div class="proj-descript">
+                  <h2 class="proj-title">Издание Limited Edition</h2>
+                  <p class="proj-category">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="proj-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/label-tag.jpg"
+                  alt="бирка с одежды"
+                  width="370"
+                />
+                <div class="proj-descript">
+                  <h2 class="proj-title">Проект LAB</h2>
+                  <p class="proj-category">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="proj-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/hands-on-laptop.jpg"
+                  alt="руки на ноутбуке"
+                  width="370"
+                />
+                <div class="proj-descript">
+                  <h2 class="proj-title">Growing Business</h2>
+                  <p class="proj-category">Приложение</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
 
@@ -169,11 +192,9 @@
         >
         <!-- контактная информация -->
         <address class="address">
-          <span class="loc-point">г. Киев, пр-т Леси Украинки, 26</span><br />
-          <span class="mail-tel"
-            >info@example.com<br />
-            +38 099 111 11 11</span
-          >
+          <span class="loc-point">г. Киев, пр-т Леси Украинки, 26</span>
+          <span class="mail">info@example.com</span>
+          <span class="tel">+38 099 111 11 11</span>
         </address>
       </div>
     </footer>
