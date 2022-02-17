@@ -251,7 +251,7 @@ p {
 }
 .feature-item {
   flex-basis: calc((100% - 90px) / 4);
-  outline: 1px solid navy;
+  /* outline: 1px solid navy; */
 }
 .feature-item:not(:nth-child(4n)) {
   margin-right: 30px;
