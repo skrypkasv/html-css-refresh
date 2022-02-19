@@ -9,6 +9,7 @@
 /* цвет рамки хедера #ececec; */
 /* цвет рамки карточки в портфолио #eeeeee */
 /* linear-gradient rgba(47, 48, 58, 0.4) */
+/* цвет иконок #afb1b8 */
 
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */
@@ -26,6 +27,7 @@
   --card-bdr-color: #eeeeee;
   --grad-start-color: rgba(47, 48, 58, 0.4);
   --grad-end-color: rgba(47, 48, 58, 0.4);
+  --link-color: #afb1b8;
 }
 
 /* глобальные стили */
@@ -187,10 +189,6 @@ p {
   margin-right: 10px;
   fill: currentColor;
 }
-.contact .link:hover .contact-icon,
-.contact .link:focus .contact-icon {
-  fill: currentColor;
-}
 .post .contact-icon {
   width: 16px;
   height: 12px;
@@ -288,6 +286,21 @@ p {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.feature-thumb {
+  display: inline-flex;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--third-bg-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+.feature-icon {
+  margin: auto;
+  width: 70px;
+  height: 70px;
+}
 .feature.list {
   display: flex;
   flex-wrap: wrap;
@@ -298,9 +311,6 @@ p {
 }
 .feature-item:not(:nth-child(4n)) {
   margin-right: 30px;
-}
-.sec-paragraph {
-  margin: 0;
 }
 
 /* чем мы занимаемся */
@@ -326,7 +336,7 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
-.team .list li {
+.team-item {
   flex-basis: calc((100% - 90px) / 4);
 }
 .team-item:not(:nth-child(4n)) {
@@ -337,11 +347,12 @@ p {
 
   line-height: 1.19;
   text-align: center;
-  /* outline: 1px solid navy; */
+
   background: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  /* outline: 1px solid navy; */
 }
 .card img {
   display: block;
@@ -355,9 +366,83 @@ p {
   font-weight: 500;
 }
 .card-role {
+  margin-bottom: 16px;
   color: var(--primary-text-color);
   font-size: 16px;
   font-weight: 400;
+}
+
+/* ссылки на соцсети */
+.social.list {
+  display: flex;
+  justify-content: center;
+  /* outline: 1px solid navy; */
+}
+.social-item {
+  display: block;
+  width: 44px;
+  height: 44px;
+  /* outline: 1px solid navy; */
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border-radius: 50%;
+}
+.social-icon {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  fill: var(--link-color);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--primary-bg-color);
+}
+
+/* Постоянные клиенты */
+.client.list {
+  display: flex;
+  justify-content: center;
+}
+.client-item {
+  display: block;
+  width: 170px;
+  height: 92px;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+.client-link {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+
+  color: var(--link-color);
+  border: 1px solid var(--link-color);
+  border-radius: 4px;
+}
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.client-icon {
+  margin: auto;
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 
 /* подвал страницы */
@@ -365,6 +450,8 @@ p {
   background-color: #2f303a;
 }
 .footer .container {
+  display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -372,6 +459,10 @@ p {
   margin-bottom: 20px;
 }
 /* контактная информация */
+.coordinates {
+  margin-right: 70px;
+  /* outline: 1px solid #ffffff; */
+}
 .address {
   font-style: inherit;
 }
@@ -387,6 +478,32 @@ p {
 }
 .mail {
   margin-bottom: 9px;
+}
+
+/* Присоединяйтесь */
+.join {
+  margin-right: auto;
+
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  /* outline: 1px solid #ffffff; */
+}
+.invoke {
+  margin-bottom: 20px;
+}
+.join .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.join .social-link:hover,
+.join .social-link:focus {
+  background-color: var(--accent-color);
+}
+.join .social-icon {
+  fill: var(--white-text-color);
 }
 /*  */
 /*  */
@@ -463,6 +580,12 @@ p {
   padding-bottom: 20px;
   flex-basis: calc((100% - 60px) / 3);
   border-bottom: 1px solid var(--card-bdr-color);
+}
+.proj-item:hover,
+.proj-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
   /* outline: 1px solid navy; */
 }
 .proj-item img {
