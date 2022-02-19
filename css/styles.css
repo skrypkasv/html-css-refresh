@@ -8,6 +8,7 @@
 /* цвет-акцент #2196F3 */
 /* цвет рамки хедера #ececec; */
 /* цвет рамки карточки в портфолио #eeeeee */
+/* linear-gradient rgba(47, 48, 58, 0.4) */
 
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */
@@ -23,6 +24,8 @@
   --accent-color: #2196f3;
   --header-bdr-color: #ececec;
   --card-bdr-color: #eeeeee;
+  --grad-start-color: rgba(47, 48, 58, 0.4);
+  --grad-end-color: rgba(47, 48, 58, 0.4);
 }
 
 /* глобальные стили */
@@ -116,7 +119,6 @@ p {
 /* логотип */
 .logo {
   display: block;
-  margin-right: 90px;
 
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -124,6 +126,11 @@ p {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+}
+.flex-nav .logo {
+  margin-right: 90px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo-black {
   color: var(--logo-black-color);
@@ -166,19 +173,22 @@ p {
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
-.contact .link:hover,
-.contact .link:focus {
-  color: var(--accent-color);
-}
-.post.link,
-.phone.link {
+.contact .link {
   display: inline-flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+}
 .contact-icon {
   margin-right: 10px;
+  fill: currentColor;
+}
+.contact .link:hover .contact-icon,
+.contact .link:focus .contact-icon {
   fill: currentColor;
 }
 .post .contact-icon {
@@ -188,12 +198,6 @@ p {
 .phone .contact-icon {
   width: 10px;
   height: 16px;
-}
-.post:hover .contact-icon,
-.post:focus .contact-icon,
-.phone:hover .contact-icon,
-.phone:focus .contact-icon {
-  fill: currentColor;
 }
 /*  */
 /*  */
@@ -223,8 +227,20 @@ p {
 /*  */
 /* герой */
 .hero {
-  background-color: #2f303a;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
   text-align: center;
+
+  background-image: linear-gradient(
+      var(--grad-start-color),
+      var(--grad-end-color)
+    ),
+    url('../images/hero.jpg');
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero .container {
   padding-top: 200px;
