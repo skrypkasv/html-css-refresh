@@ -22,6 +22,7 @@
     <!-- HEADER -->
     <header class="header">
       <div class="container header__container">
+
         <!-- LOGO -->
         <a class="logo header__logo" href="./index.html" lang="en" id="top-anchor">
           Web<span class="logo__studio">Studio</span>
@@ -69,12 +70,12 @@
       <!-- Section Hero -->
 
       <section class="hero">
-        <div class="container">
-          <h1 class="hero-title">
+        <div class="container hero__container">
+          <h1 class="hero__title">
             Эффективные решения<br />для вашего бизнеса
           </h1>
           <!-- <a href="">Заказать услугу</a> -->
-          <button class="button-order" type="button" data-modal-open>
+          <button class="button hero__button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -82,55 +83,55 @@
 
       <!-- Section Features -->
 
-      <section class="section">
+      <section class="feature">
         <div class="container">
           <h2 class="invisible">Наши преимущества</h2>
 
-          <ul class="feature list">
-            <li class="feature-item">
-              <div class="icon-frame">
-                <svg class="feature-icon">
+          <ul class="feature__list list">
+            <li class="feature__item">
+              <div class="feature__frame">
+                <svg class="feature__icon">
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="sec-subtitle">Внимание к деталям</h3>
-              <p class="sec-paragraph">
+              <h3 class="feature__title subtitle">Внимание к деталям</h3>
+              <p class="feature__paragraph">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="feature-item">
-              <div class="icon-frame">
-                <svg class="feature-icon">
+            <li class="feature__item">
+              <div class="feature__frame">
+                <svg class="feature__icon">
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="sec-subtitle">Пунктуальность</h3>
-              <p class="sec-paragraph">
+              <h3 class="feature__title subtitle">Пунктуальность</h3>
+              <p class="feature__paragraph">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="feature-item">
-              <div class="icon-frame">
-                <svg class="feature-icon">
+            <li class="feature__item">
+              <div class="feature__frame">
+                <svg class="feature__icon">
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="sec-subtitle">Планирование</h3>
-              <p class="sec-paragraph">
+              <h3 class="feature__title subtitle">Планирование</h3>
+              <p class="feature__paragraph">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="feature-item">
-              <div class="icon-frame">
-                <svg class="feature-icon">
+            <li class="feature__item">
+              <div class="feature__frame">
+                <svg class="feature__icon">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="sec-subtitle">Современные технологии</h3>
-              <p class="sec-paragraph">
+              <h3 class="feature__title subtitle">Современные технологии</h3>
+              <p class="feature__paragraph">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -141,26 +142,26 @@
 
       <!-- Section Occupations -->
 
-      <section class="section">
+      <section class="occupation">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="occupation list">
-            <li class="occupation-item">
-              <a class="occupation-link" href="">
-                <img src="images/keyboard.jpg" alt="клавиатура" width="370" />
-                <p class="link-label">десктопные приложения</p>
+          <h2 class="title">Чем мы занимаемся</h2>
+          <ul class="occupation__list list">
+            <li class="occupation__item">
+              <a class="occupation__link" href="">
+                <img class="occupation__pic" src="images/keyboard.jpg" alt="клавиатура" width="370" />
+                <p class="occupation__label">десктопные приложения</p>
               </a>
             </li>
-            <li class="occupation-item">
-              <a class="occupation-link" href="">
-                <img src="images/laptop.jpg" alt="ноутбук" width="370" />
-                <p class="link-label">мобильные приложения</p>
+            <li class="occupation__item">
+              <a class="occupation__link" href="">
+                <img class="occupation__pic" src="images/laptop.jpg" alt="ноутбук" width="370" />
+                <p class="occupation__label">мобильные приложения</p>
               </a>
             </li>
-            <li class="occupation-item">
-              <a class="occupation-link" href="">
-                <img src="images/tablet.jpg" alt="планшет" width="370" />
-                <p class="link-label">дизайнерские решения</p>
+            <li class="occupation__item">
+              <a class="occupation__link" href="">
+                <img class="occupation__pic" src="images/tablet.jpg" alt="планшет" width="370" />
+                <p class="occupation__label">дизайнерские решения</p>
               </a>
             </li>
           </ul>
@@ -171,7 +172,7 @@
 
       <section class="section our-team">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="title">Наша команда</h2>
           <ul class="team list">
             <li class="team-item">
               <div class="team-card">
@@ -373,7 +374,7 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="title">Постоянные клиенты</h2>
           <ul class="clients list">
             <li class="client-item">
               <a class="client-link" href="">
@@ -424,10 +425,10 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <div class="contact-us">
           <!-- LOGO -->
-          <a class="logo" href="#top-anchor" lang="en"
+          <a class="logo footer__logo" href="#top-anchor" lang="en"
             >Web<span class="logo__studio logo__studio--light">Studio</span></a
           >
           <!-- Address -->
@@ -472,7 +473,13 @@
           </ul>
         </div>
         <div class="subscribe">
-          <form action=""></form>
+          <form name="subscribe-form">
+            <label>
+              Подпишитесь на рассылку
+              <input type="email" name="email">
+            </label>
+            <button type="submit">Подписаться</button>
+          </form>
         </div>
       </div>
     </footer>
