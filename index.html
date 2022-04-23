@@ -445,59 +445,72 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="contact-us">
+        <div class="coordinates">
           <!-- LOGO -->
           <a class="logo footer__logo" href="#top-anchor" lang="en"
             >Web<span class="logo__studio logo__studio--light">Studio</span></a
           >
           <!-- Address -->
           <address class="address">
-            <span class="location">г. Киев, пр-т Леси Украинки, 26</span>
-            <span class="mail">info@example.com</span>
-            <span class="tel">+38 099 111 11 11</span>
+            <span class="address__location"
+              >г. Киев, пр-т Леси Украинки, 26</span
+            >
+            <span class="address__mail">info@example.com</span>
+            <span class="address__tel">+38 099 111 11 11</span>
           </address>
         </div>
+
         <!-- Join-us -->
         <div class="join-us">
           <p class="call-to-join">присоединяйтесь</p>
           <ul class="links list">
             <li class="links__item">
               <a class="link" href="">
-                <svg class="link-icon">
+                <svg class="link__icon">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="links__item">
               <a class="link" href="">
-                <svg class="link-icon">
+                <svg class="link__icon">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="links__item">
               <a class="link" href="">
-                <svg class="link-icon">
+                <svg class="link__icon">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="links__item">
               <a class="link" href="">
-                <svg class="link-icon">
+                <svg class="link__icon">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+
+        <!-- Subscribe -->
         <div class="subscribe">
-          <form class="js-speaker-form">
-            <label>
+          <form class="footer-form js-speaker-form">
+            <label class="footer-form__label" for="footer-mail">
               Подпишитесь на рассылку
-              <input type="email" name="email" />
             </label>
-            <button type="submit">Подписаться</button>
+            <input
+              class="footer-form__input"
+              type="email"
+              name="email"
+              id="footer-mail"
+              placeholder="E-mail"
+            />
+            <button class="button footer-form__button" type="submit">
+              Подписаться
+            </button>
           </form>
         </div>
       </div>
@@ -506,18 +519,61 @@
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="js-signup-form">
-          Оставьте свои данные, мы вам перезвоним
-          <br />
-          <label for="name">Имя</label>
-          <input type="text" name="name" id="name" />
-          <br />
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" />
-          <br />
-          <label for="mail">Почта</label>
-          <input type="email" name="mail" id="mail" />
-          <button type="submit">Отправить</button>
+        <form class="form js-signup-form">
+          <b class="form__call title">
+            Оставьте свои данные, мы вам перезвоним
+          </b>
+          <div class="form__field">
+            <label class="form__label" for="name">Имя</label>
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="John Johnson"
+            />
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="tel">Телефон</label>
+            <input
+              class="form__input"
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="+280770000000"
+            />
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="mail">Почта</label>
+            <input
+              class="form__input"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="my@mail.com"
+            />
+          </div>
+
+          <div class="form__field form__field--textarea">
+            <label class="form__label" for="comments">Коментарий</label>
+            <textarea
+              class="form__input comments"
+              id="comments"
+              name="comments"
+              placeholder="Введите текст"
+              rows="6"
+            ></textarea>
+          </div>
+
+          <div class="form__field form__field--checkbox">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="deal" href="">Условия договора</a></label
+            >
+          </div>
+
+          <button class="button form__button" type="submit">Отправить</button>
         </form>
         <button class="button-close" type="button" data-modal-close>
           <svg class="icon-close" width="11" height="11">

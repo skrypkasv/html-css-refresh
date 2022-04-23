@@ -107,7 +107,7 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: var(--h);
-  letter-spacing: inherit;
+  letter-spacing: 0.06em;
 
   cursor: pointer;
   border: none;
@@ -304,7 +304,6 @@ p {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero__button {
@@ -540,28 +539,28 @@ p {
 
 .footer__logo {
   margin-bottom: 20px;
-  outline: 1px solid #ffffff;
+  /* outline: 1px solid #ffffff; */
+}
+.coordinates {
+  margin-right: 70px;
+  /* outline: 1px solid #ffffff; */
 }
 /* Address */
-.contact-us {
-  margin-right: 70px;
-  outline: 1px solid #ffffff;
-}
 .address {
   font-style: inherit;
-  outline: 1px solid #ffffff;
+  /* outline: 1px solid #ffffff; */
 }
-.location {
+.address__location {
   display: block;
   margin-bottom: 9px;
   color: var(--white-text-color);
 }
-.mail,
-.tel {
+.address__mail,
+.address__tel {
   display: block;
   color: var(--footer-contact-txt-color);
 }
-.mail {
+.address__mail {
   margin-bottom: 9px;
 }
 /* Join-us */
@@ -574,28 +573,57 @@ p {
   line-height: 1.14;
   text-transform: uppercase;
 
-  outline: 1px solid #ffffff;
+  /* outline: 1px solid #ffffff; */
 }
 .call-to-join {
   margin-bottom: 20px;
 }
-.join-us s__link {
-  background-color: var(--footers__link-bg-color);
-}
-.join-us s__link:hover,
-.join-us s__link:focus {
-  background-color: var(--accent-color);
-}
-.join-us s__link-icon {
-  fill: var(--white-text-color);
-}
 
+/* Subscribe */
 .subscribe {
-  font-style: inherit;
   color: var(--white-text-color);
 
-  outline: 1px solid #ffffff;
+  /* outline: 1px solid #ffffff; */
 }
+
+.footer-form {
+}
+
+.footer-form__label {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-form__input {
+  display: inline-block;
+
+  margin-right: 12px;
+  padding: 14px 16px;
+  width: 358px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: var(--white-text-color);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--secondary-bg-color);
+}
+
+.footer-form__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__button {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
 /*  */ /*  */ /*    */ /*  */ /*  */ /*  */ /*    */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 /*  */ /*    */ /*  */ /*  */ /*  */ /*    */ /*  */ /*  */ /*  */ /*  */
 /*  */ /*    */ /*  */ /*    */ /*  */ /*  */ /*  */ /*  */
@@ -761,6 +789,7 @@ p {
 
   min-width: 530px;
   min-height: 580px;
+  padding: 40px;
 
   transform: translate(-50%, -50%);
   background-color: var(--primary-bg-color);
@@ -785,9 +814,86 @@ p {
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  outline: 1px solid navy;
+  /* outline: 1px solid navy; */
 }
 .icon-close {
   margin: auto;
   fill: var(--logo-black-color);
+}
+
+.form {
+  /* background-color: #eff4df; */
+  outline: 1px solid tomato;
+}
+
+.form__call {
+  display: block;
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.form__field {
+  margin-bottom: 10px;
+  /* outline: 1px solid tomato; */
+}
+
+.form__field--textarea {
+  margin-bottom: 20px;
+}
+.form__field--checkbox {
+  margin-bottom: 30px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.comments {
+  padding: 12px 16px;
+  resize: none;
+}
+
+.form__input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.deal {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.form__button {
+  position: absolute;
+  left: 50%;
+
+  padding-left: 55px;
+  padding-right: 55px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transform: translateX(-50%);
+}
+
+.form__button:hover,
+.form__button:focus {
+  box-shadow: var(--btn-order-hover-shadow);
+}
+.form__button:active {
+  box-shadow: inset var(--btn-order-hover-shadow);
 }
