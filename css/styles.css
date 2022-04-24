@@ -69,7 +69,7 @@ a {
   width: 1200px;
   margin: 0 auto;
   padding: 94px 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .title {
   margin-bottom: 50px;
@@ -608,11 +608,15 @@ p {
   font-size: 16px;
   line-height: 1.25;
 
-  color: var(--white-text-color);
-
+  color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--secondary-bg-color);
+  outline: none;
+}
+
+.footer-form__input:focus {
+  border: 2px solid var(--accent-color);
 }
 
 .footer-form__input::placeholder {
@@ -620,8 +624,23 @@ p {
 }
 
 .footer-form__button {
+  display: inline-flex;
+  align-items: center;
   padding-left: 28px;
   padding-right: 28px;
+}
+
+.footer-form__button:hover,
+.footer-form__button:focus {
+  box-shadow: var(--btn-order-hover-shadow);
+}
+.footer-form__button:active {
+  box-shadow: inset var(--btn-order-hover-shadow);
+}
+
+.footer-form__icon {
+  fill: var(--white-text-color);
+  margin-left: 10px;
 }
 
 /*  */ /*  */ /*    */ /*  */ /*  */ /*  */ /*    */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
@@ -812,18 +831,26 @@ p {
   height: 30px;
   padding: 0;
 
+  cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  /* outline: 1px solid navy; */
 }
+.button-close:hover .icon-close,
+.button-close:focus .icon-close {
+  fill: var(--accent-color);
+}
+
+.button-close:active {
+  outline: 2px solid var(--accent-color);
+}
+
 .icon-close {
   margin: auto;
   fill: var(--logo-black-color);
 }
 
 .form {
-  /* background-color: #eff4df; */
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .form__call {
@@ -856,12 +883,41 @@ p {
   letter-spacing: 0.01em;
 }
 
+.input-wrapper {
+  position: relative;
+}
+
 .form__input {
   display: block;
   width: 100%;
-  padding: 11px 12px;
+  padding-left: 42px;
+  padding-right: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  color: var(--primary-text-color);
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
+}
+
+.form__input:focus {
+  border: 2px solid var(--accent-color);
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+
+  fill: var(--secondary-text-color);
+}
+
+.form__input:focus + .form__icon {
+  fill: var(--accent-color);
 }
 
 .comments {
