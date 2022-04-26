@@ -1,0 +1,99 @@
+.team {
+  background: $thirdBgColor;
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.team__item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.card {
+  padding-bottom: 30px;
+
+  line-height: 1.19;
+  text-align: center;
+
+  background: $primaryBgColor;
+  box-shadow: $teamCardShadow;
+  border-radius: 0px 0px 4px 4px;
+  /* outline: 1px solid navy; */
+}
+
+.card img {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.card__title {
+  margin-bottom: 10px;
+
+  color: $secondaryTextColor;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card__role {
+  margin-bottom: 16px;
+
+  color: $primaryTextColor;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* social links */
+.links {
+  display: flex;
+  justify-content: center;
+  /* outline: 1px solid navy; */
+}
+
+.links__item {
+  display: block;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  overflow: hidden;
+  /* outline: 1px solid navy; */
+}
+
+.links__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  transition: background-color 250ms $timeFunction;
+}
+
+.link__icon {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+
+  fill: $iconColor;
+
+  transition: fill 250ms $timeFunction;
+}
+
+.link:hover,
+.link:focus {
+  background-color: $accentColor;
+}
+
+.link:hover .link__icon,
+.link:focus .link__icon {
+  fill: $primaryBgColor;
+}

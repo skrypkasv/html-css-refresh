@@ -1,0 +1,104 @@
+.form {
+  /* outline: 1px solid tomato; */
+}
+
+.form__call {
+  display: block;
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.form__field {
+  margin-bottom: 10px;
+  /* outline: 1px solid tomato; */
+}
+
+.form__field--textarea {
+  margin-bottom: 20px;
+}
+.form__field--checkbox {
+  margin-bottom: 30px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding-left: 42px;
+  padding-right: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  color: $primaryTextColor;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+.form__input:focus {
+  border: 2px solid $accentColor;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+
+  fill: $secondaryTextColor;
+}
+
+.form__input:focus + .form__icon {
+  fill: $accentColor;
+}
+
+.comments {
+  padding: 12px 16px;
+  resize: none;
+}
+
+.form__input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.deal {
+  color: $accentColor;
+  text-decoration: underline;
+}
+
+.form__button {
+  position: absolute;
+  left: 50%;
+
+  padding-left: 55px;
+  padding-right: 55px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transform: translateX(-50%);
+}
+
+.form__button:hover,
+.form__button:focus {
+  box-shadow: $btnOrderHoverShadow;
+}
+.form__button:active {
+  box-shadow: inset $btnOrderHoverShadow;
+}

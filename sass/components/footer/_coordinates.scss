@@ -1,0 +1,25 @@
+.coordinates {
+  margin-right: 70px;
+  /* outline: 1px solid #ffffff; */
+}
+
+.address {
+  font-style: inherit;
+  /* outline: 1px solid #ffffff; */
+}
+
+.address__location {
+  display: block;
+  margin-bottom: 9px;
+  color: $whiteTextColor;
+}
+
+.address__mail,
+.address__tel {
+  display: block;
+  color: $footerContactTxtColor;
+}
+
+.address__mail {
+  margin-bottom: 9px;
+}

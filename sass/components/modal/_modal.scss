@@ -1,0 +1,18 @@
+@import 'backdrop';
+@import 'button-close';
+@import 'form';
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  min-width: 530px;
+  min-height: 580px;
+  padding: 40px;
+
+  transform: translate(-50%, -50%);
+  background-color: $primaryBgColor;
+  box-shadow: $modalShadow;
+  border-radius: 4px;
+}

@@ -1,0 +1,43 @@
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+
+$primaryTextColor: #757575;
+$secondaryTextColor: #212121;
+$whiteTextColor: #ffffff;
+$logoBlackColor: #000000;
+$primaryBgColor: #ffffff;
+$secondaryBgColor: #2f303a;
+$thirdBgColor: #f5f4fa;
+$accentColor: #2196f3;
+$headerBdrColor: #ececec;
+$cardBdrColor: #eeeeee;
+
+$gradStartColor: rgba(47, 48, 58, 0.4);
+
+$gradEndColor: rgba(47, 48, 58, 0.4);
+
+$footerContactTxtColor: rgba(255, 255, 255, 0.6);
+
+$footersLinkBgColor: rgba(255, 255, 255, 0.1);
+
+$iconColor: #afb1b8;
+
+$timeFunction: cubic-bezier(0.4, 0, 0.2, 1);
+
+$cardShadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+
+$backdropBcgColor: rgba(0, 0, 0, 0.2);
+
+$modalShadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+
+$btnOrderShadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+$btnOrderHoverShadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+$teamCardShadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+$portfolioBtnShadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);

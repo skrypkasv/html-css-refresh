@@ -1,0 +1,28 @@
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.button-close:hover .icon-close,
+.button-close:focus .icon-close {
+  fill: $accentColor;
+}
+
+.button-close:active {
+  outline: 2px solid $accentColor;
+}
+
+.icon-close {
+  margin: auto;
+  fill: $logoBlackColor;
+}

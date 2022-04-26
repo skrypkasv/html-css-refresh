@@ -1,0 +1,61 @@
+.subscribe {
+  color: $whiteTextColor;
+  /* outline: 1px solid #ffffff; */
+}
+
+.footer-form {
+}
+
+.footer-form__label {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-form__input {
+  display: inline-block;
+
+  margin-right: 12px;
+  padding: 14px 16px;
+  width: 358px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: $secondaryBgColor;
+  outline: none;
+}
+
+.footer-form__input:focus {
+  border: 2px solid $accentColor;
+}
+
+.footer-form__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__button {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.footer-form__button:hover,
+.footer-form__button:focus {
+  box-shadow: $btnOrderHoverShadow;
+}
+.footer-form__button:active {
+  box-shadow: inset $btnOrderHoverShadow;
+}
+
+.footer-form__icon {
+  fill: $whiteTextColor;
+  margin-left: 10px;
+}
